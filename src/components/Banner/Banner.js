@@ -4,7 +4,7 @@ import classes from './Banner.module.scss';
 
 export default ({ height }) => {
   return (
-    <div className={classes.Banner} style={{ height: height || '400px' }}>
+    <div className={classes.Banner} style={{ height: height || '300px' }}>
       <div className={`image-wrapper`}>
         <img src={bannerImg} alt="" />
       </div>

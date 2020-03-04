@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { IoIosSearch, IoIosPerson } from 'react-icons/io';
+import { IoIosSearch } from 'react-icons/io';
 import Button from '../Buttons/Button';
 import classes from './NavBar.module.scss';
 
 const mainMenuItems = [
   { displayName: 'home', href: '/' },
   { displayName: 'popular', href: '/popular' },
-  { displayName: 'explore', href: '/explore', subMenu: [{}] },
-  { displayName: 'about me', href: '/me' }
+  { displayName: 'explore', href: '/explore', subMenu: [{}] }
+  // { displayName: 'about me', href: '/me' }
 ];
 
 export default props => {
