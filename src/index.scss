@@ -1,0 +1,95 @@
+@import 'sass/modules';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $primaryFont, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// *** LISTS ***
+ul,
+ol {
+  list-style-type: none;
+}
+
+// *** LINKS ***
+a {
+  text-decoration: none;
+  color: var(--textColor);
+
+  &:hover,
+  &.active {
+    color: var(--primaryColor);
+  }
+}
+
+// *** ICONS *** //
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// *** IMAGES *** //
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  @include Flex;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+  }
+}
+
+// *** GLobal Menu Items
+.menu-item {
+  text-transform: capitalize;
+}
+
+// *** Global Max Width
+.global_max-width {
+  max-width: $globalMaxWidth;
+}
+
+// *** BRAND ***
+.brand {
+  color: var(--primaryColor);
+  font-family: $headerFont, sans-serif;
+}
+
+// *** Setting a max-width for the app *** //
+.navbar-container nav {
+  @extend .global_max-width;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-container {
+  height: 60px;
+  background: var(--inverseTextColor);
+  // @include BoxShadow($blur: 3px, $y: 4px);
+}

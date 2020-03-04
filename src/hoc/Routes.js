@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Home from '../pages/Home/Home';
 
 export default () => {
   return (
     <Fragment>
-      <Route path='/' render={<h1>Hello world</h1>} />
+      <Route path="/" component={Home} />
     </Fragment>
-  )
-}
+  );
+};
