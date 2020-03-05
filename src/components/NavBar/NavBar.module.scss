@@ -1,0 +1,21 @@
+.NavBar {
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.MainMenu,
+.NavBar {
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .MainMenu li {
+    font-size: 0.875rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5em;
+    }
+  }
+}
