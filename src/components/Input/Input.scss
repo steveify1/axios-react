@@ -1,0 +1,49 @@
+.form-group {
+  .formControl {
+    width: 200px;
+
+    &.noBorder {
+      border: none;
+    }
+  }
+  label {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 0.875rem;
+    display: block;
+  }
+  .formControl {
+    outline: none;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    width: 100% !important;
+  }
+
+  select {
+    text-transform: capitalize;
+
+    option:hover {
+      background: var(--basic-color);
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .formControl:focus {
+    outline: none;
+    border: 1px solid var(--basic-color);
+    box-shadow: 0 0 1px var(--basic-color);
+  }
+
+  input:disabled,
+  textarea:disabled,
+  select:disabled {
+    border: 1px solid var(--basic-color);
+  }
+
+  margin-bottom: 0.75rem !important;
+}
